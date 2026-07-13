@@ -1,0 +1,25 @@
+{
+    "Steel": {
+        "density": 7850,
+        "youngs_modulus": 200000000000,
+        "yield_strength": 250000000
+    },
+
+    "Concrete": {
+        "density": 2400,
+        "youngs_modulus": 30000000000,
+        "yield_strength": 40000000
+    },
+
+    "Aluminium": {
+        "density": 2700,
+        "youngs_modulus": 69000000000,
+        "yield_strength": 150000000
+    },
+
+    "Composite": {
+        "density": 1850,
+        "youngs_modulus": 120000000000,
+        "yield_strength": 600000000
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "bridge": "data\\bridges\\default_bridge.json",
+    "model": "models\\random_forest.pkl",
+    "update_interval": 2,
+    "baud_rate": 9600,
+    "auto_detect_arduino": true
+}

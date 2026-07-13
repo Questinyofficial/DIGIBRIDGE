@@ -1,0 +1,30 @@
+{
+    "canvas": {
+        "width": 900,
+        "height": 600,
+        "background": "#FFFFFF"
+    },
+
+    "grid": {
+        "enabled": true,
+        "spacing": 40,
+        "color": "#E5E7EB"
+    },
+
+    "node": {
+        "radius": 8,
+        "color": "#1565C0",
+        "selected_color": "#FF9800"
+    },
+
+    "member": {
+        "width": 3,
+        "color": "#424242",
+        "selected_color": "#FF5722"
+    },
+
+    "labels": {
+        "show_node_ids": true,
+        "show_member_ids": false
+    }
+}

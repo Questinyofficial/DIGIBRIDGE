@@ -1,0 +1,21 @@
+# ==========================================================
+# DigiBridge - Bridge Digital Twin
+# Python Dependencies
+# ==========================================================
+
+# Scientific Computing
+numpy>=2.0.0
+pandas>=2.2.0
+
+# Machine Learning
+scikit-learn>=1.6.0
+joblib>=1.4.0
+
+# Arduino Communication
+pyserial>=3.5
+
+# Plotting (Future Graphs & Analytics)
+matplotlib>=3.10.0
+
+# Excel Export (Future Logging)
+openpyxl>=3.1.5

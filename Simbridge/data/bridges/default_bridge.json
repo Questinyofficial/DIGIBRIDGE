@@ -1,0 +1,95 @@
+{
+    "materials": [
+        {
+            "name": "Steel",
+            "density": 7850,
+            "youngs_modulus": 200000000000,
+            "poisson_ratio": 0.30,
+            "yield_strength": 250000000,
+            "ultimate_strength": 460000000,
+            "thermal_expansion": 0.000012,
+            "corrosion_resistance": 0.80,
+            "cost_per_kg": 1.50
+        },
+        {
+            "name": "Concrete",
+            "density": 2400,
+            "youngs_modulus": 30000000000,
+            "poisson_ratio": 0.20,
+            "yield_strength": 40000000,
+            "ultimate_strength": 50000000,
+            "thermal_expansion": 0.000010,
+            "corrosion_resistance": 1.00,
+            "cost_per_kg": 0.15
+        },
+        {
+            "name": "Aluminium",
+            "density": 2700,
+            "youngs_modulus": 69000000000,
+            "poisson_ratio": 0.33,
+            "yield_strength": 95000000,
+            "ultimate_strength": 310000000,
+            "thermal_expansion": 0.000023,
+            "corrosion_resistance": 0.95,
+            "cost_per_kg": 3.20
+        },
+        {
+            "name": "Composite",
+            "density": 1800,
+            "youngs_modulus": 50000000000,
+            "poisson_ratio": 0.25,
+            "yield_strength": 600000000,
+            "ultimate_strength": 800000000,
+            "thermal_expansion": 0.000008,
+            "corrosion_resistance": 1.00,
+            "cost_per_kg": 8.50
+        }
+    ],
+    "nodes": [
+        {"node_id":1,"x":0,"y":0,"support_type":"PINNED","load_x":0,"load_y":0,"sensor_installed":true},
+        {"node_id":2,"x":4,"y":0,"support_type":"NONE","load_x":0,"load_y":0,"sensor_installed":false},
+        {"node_id":3,"x":8,"y":0,"support_type":"NONE","load_x":0,"load_y":0,"sensor_installed":false},
+        {"node_id":4,"x":12,"y":0,"support_type":"NONE","load_x":0,"load_y":0,"sensor_installed":false},
+        {"node_id":5,"x":16,"y":0,"support_type":"NONE","load_x":0,"load_y":0,"sensor_installed":false},
+        {"node_id":6,"x":20,"y":0,"support_type":"ROLLER","load_x":0,"load_y":0,"sensor_installed":true},
+
+        {"node_id":7,"x":2,"y":3,"support_type":"NONE","load_x":0,"load_y":0,"sensor_installed":false},
+        {"node_id":8,"x":6,"y":3,"support_type":"NONE","load_x":0,"load_y":0,"sensor_installed":false},
+        {"node_id":9,"x":10,"y":3,"support_type":"NONE","load_x":0,"load_y":0,"sensor_installed":false},
+        {"node_id":10,"x":14,"y":3,"support_type":"NONE","load_x":0,"load_y":0,"sensor_installed":false},
+        {"node_id":11,"x":18,"y":3,"support_type":"NONE","load_x":0,"load_y":0,"sensor_installed":false}
+    ],
+
+    "members":[
+
+    {"member_id":1,"start_node":1,"end_node":2,"material":"Steel","area":0.024,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":2,"start_node":2,"end_node":3,"material":"Steel","area":0.024,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":3,"start_node":3,"end_node":4,"material":"Steel","area":0.024,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":4,"start_node":4,"end_node":5,"material":"Steel","area":0.024,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":5,"start_node":5,"end_node":6,"material":"Steel","area":0.024,"age":8,"corrosion":2,"crack_width":0.04},
+
+    {"member_id":6,"start_node":7,"end_node":8,"material":"Steel","area":0.018,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":7,"start_node":8,"end_node":9,"material":"Steel","area":0.018,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":8,"start_node":9,"end_node":10,"material":"Steel","area":0.018,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":9,"start_node":10,"end_node":11,"material":"Steel","area":0.018,"age":8,"corrosion":2,"crack_width":0.04},
+
+    {"member_id":10,"start_node":1,"end_node":7,"material":"Steel","area":0.016,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":11,"start_node":7,"end_node":2,"material":"Steel","area":0.016,"age":8,"corrosion":2,"crack_width":0.04},
+
+    {"member_id":12,"start_node":2,"end_node":8,"material":"Steel","area":0.016,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":13,"start_node":8,"end_node":3,"material":"Steel","area":0.016,"age":8,"corrosion":2,"crack_width":0.04},
+
+    {"member_id":14,"start_node":3,"end_node":9,"material":"Steel","area":0.016,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":15,"start_node":9,"end_node":4,"material":"Steel","area":0.016,"age":8,"corrosion":2,"crack_width":0.04},
+
+    {"member_id":16,"start_node":4,"end_node":10,"material":"Steel","area":0.016,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":17,"start_node":10,"end_node":5,"material":"Steel","area":0.016,"age":8,"corrosion":2,"crack_width":0.04},
+
+    {"member_id":18,"start_node":5,"end_node":11,"material":"Steel","area":0.016,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":19,"start_node":11,"end_node":6,"material":"Steel","area":0.016,"age":8,"corrosion":2,"crack_width":0.04},
+
+    {"member_id":20,"start_node":7,"end_node":9,"material":"Steel","area":0.014,"age":8,"corrosion":2,"crack_width":0.04},
+    {"member_id":21,"start_node":9,"end_node":11,"material":"Steel","area":0.014,"age":8,"corrosion":2,"crack_width":0.04}
+
+    ]
+}
